@@ -1,7 +1,7 @@
 {
   "name": "typescript-playground",
   "version": "1.0.0",
-  "description": "Typescript sandbox for evaluating functionalities",
+  "description": "Typescript/React/Webpack boilerplate to kick start your project",
   "main": "src/index.js",
   "scripts": {
     "build": "NODE_ENV=production node_modules/webpack/bin/webpack.js --config webpack.config.js --progress --profile --colors",
