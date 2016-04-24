@@ -1,0 +1,14 @@
+{
+  "version": "1.8.10",
+  "compilerOptions": {
+    "target": "es5",
+    "jsx": "react",
+    "sourceMap": true,
+    "noEmitOnError": false
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "typings"
+  ]
+}
