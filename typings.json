@@ -2,9 +2,23 @@
   "ambientDependencies": {
     "react": "registry:dt/react#0.14.0+20160423065914",
     "react-bootstrap": "registry:dt/react-bootstrap#0.0.0+20160423135514",
-    "react-dom": "registry:dt/react-dom#0.14.0+20160412154040"
+    "react-dom": "registry:dt/react-dom#0.14.0+20160412154040",
+    "react-redux": "registry:dt/react-redux#4.4.0+20160406115600",
+    "redux": "registry:dt/redux#3.3.1+20160326112656",
+    "redux-actions": "registry:dt/redux-actions#0.8.0+20160317120654",
+    "redux-devtools": "registry:dt/redux-devtools#3.0.0+20151215130854",
+    "redux-devtools-dock-monitor": "registry:dt/redux-devtools-dock-monitor#1.0.1+20151216103641",
+    "redux-devtools-log-monitor": "registry:dt/redux-devtools-log-monitor#1.0.1+20151216103641",
+    "redux-logger": "registry:dt/redux-logger#2.6.0+20160316155526",
+    "redux-thunk": "registry:dt/redux-thunk#2.0.1+20160317120654",
+    "webpack": "registry:dt/webpack#1.12.9+20160321060707",
+    "webpack-env": "registry:dt/webpack-env#1.12.2+20160316155526"
   },
   "dependencies": {
-    "react-router": "registry:npm/react-router#2.0.0+20160214194820"
+    "lodash": "registry:npm/lodash#4.0.0+20160416211519",
+    "react-redux": "registry:npm/react-redux#4.4.0+20160207114942",
+    "react-router": "registry:npm/react-router#2.0.0+20160214194820",
+    "redux": "registry:npm/redux#3.0.6+20160214194820",
+    "redux-thunk": "registry:npm/redux-thunk#1.0.4+20160207154919"
   }
 }

@@ -6,16 +6,31 @@ import {
     hashHistory, Link,
     IndexRoute
 } from 'react-router';
+import {
+    Provider
+} from 'react-redux';
+import DevTools from '../config/redux/DevTools';
+import {ApplicationConfig} from '../config';
 import Application from './Application';
 import About from './pages/AboutPage';
 import Home from './pages/HomePage';
 
+const routes = <Router history={hashHistory}>
+    <Route path="/" component={Application}>
+        <IndexRoute component={Home}/>
+        <Route path="/about" component={About}/>
+    </Route>
+</Router>;
+
+const store = ApplicationConfig.configReduxDev({ pages: {} });
+const root = <Provider store={store}>
+    <div>
+        {routes}
+        <DevTools />        
+    </div>
+</Provider>;
+
 ReactDOM.render(
-    <Router history={hashHistory}>
-        <Route path="/" component={Application}>
-            <IndexRoute component={Home}/>
-            <Route path="/about" component={About}/>
-        </Route>
-    </Router>,
+    root,
     document.getElementById("bootstrapContainer")
 );
