@@ -25,9 +25,10 @@ const common = {
         publicPath: '/',
         filename: '[name].[hash].js'
     },
-    devtool:"source-map",
+    devtool: "source-map",
     plugins: [
         new webpack.optimize.CommonsChunkPlugin('common', 'vendor.js'),
+        new webpack.HotModuleReplacementPlugin(),
         new webpack.NoErrorsPlugin(),
         new HtmlWebpackPlugin({
             inject: true,
