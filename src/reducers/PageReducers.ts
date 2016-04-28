@@ -11,4 +11,4 @@ export const pages = handleActions({
     [PAGE_ACTIONS.TOGGLE_SIDE_NAV]: (state:any, action: Action) => {
         return state;
     }
-});
+},{});
