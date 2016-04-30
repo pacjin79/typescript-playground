@@ -14,15 +14,18 @@ import {ApplicationConfig} from '../config';
 import Application from './Application';
 import About from './pages/AboutPage';
 import Home from './pages/HomePage';
+import {syncHistoryWithStore} from 'react-router-redux';
 
-const routes = <Router history={hashHistory}>
+const store = ApplicationConfig.configReduxDev({ pages: {} });
+const history = syncHistoryWithStore(hashHistory, store);
+
+const routes = <Router history={history}>
     <Route path="/" component={Application}>
         <IndexRoute component={Home}/>
         <Route path="/about" component={About}/>
     </Route>
 </Router>;
 
-const store = ApplicationConfig.configReduxDev({ pages: {} });
 const root = <Provider store={store}>
     <div>
         {routes}
