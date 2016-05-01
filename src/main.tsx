@@ -15,8 +15,21 @@ import Application from './Application';
 import About from './pages/AboutPage';
 import Home from './pages/HomePage';
 import SelectorPage from './pages/SelectorPage';
+import {syncHistoryWithStore} from 'react-router-redux';
 
-const routes = <Router history={hashHistory}>
+const store = ApplicationConfig.configReduxDev({
+    pages: {
+    },
+    products: {
+        p1: {
+            id: "p1",
+            name: "product1",
+            description: "Product 1 descr"
+        }
+    }
+});
+const history = syncHistoryWithStore(hashHistory, store);
+const routes = <Router history={history}>
     <Route path="/" component={Application}>
         <IndexRoute component={Home}/>
         <Route path="/selectors" component={SelectorPage} />
@@ -24,21 +37,10 @@ const routes = <Router history={hashHistory}>
     </Route>
 </Router>;
 
-const store = ApplicationConfig.configReduxDev({ 
-        pages: {
-        },
-        products: {
-            p1: {
-                id: "p1",
-                name: "product1",
-                description: "Product 1 descr"
-            }
-        }
-    });
 const root = <Provider store={store}>
     <div>
         {routes}
-        <DevTools />        
+        <DevTools />
     </div>
 </Provider>;
 
