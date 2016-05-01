@@ -46,6 +46,7 @@
     "redux": "^3.5.2",
     "redux-actions": "^0.9.1",
     "redux-async-connect": "^1.0.0-rc4",
-    "redux-thunk": "^2.0.1"
+    "redux-thunk": "^2.0.1",
+    "reselect": "^2.5.1"
   }
 }

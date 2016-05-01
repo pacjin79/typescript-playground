@@ -11,6 +11,7 @@
     "redux-devtools-log-monitor": "registry:dt/redux-devtools-log-monitor#1.0.1+20151216103641",
     "redux-logger": "registry:dt/redux-logger#2.6.0+20160316155526",
     "redux-thunk": "registry:dt/redux-thunk#2.0.1+20160317120654",
+    "reselect": "registry:dt/reselect#2.0.2+20160319031821",
     "webpack": "registry:dt/webpack#1.12.9+20160321060707",
     "webpack-env": "registry:dt/webpack-env#1.12.2+20160316155526"
   },

@@ -14,15 +14,27 @@ import {ApplicationConfig} from '../config';
 import Application from './Application';
 import About from './pages/AboutPage';
 import Home from './pages/HomePage';
+import SelectorPage from './pages/SelectorPage';
 
 const routes = <Router history={hashHistory}>
     <Route path="/" component={Application}>
         <IndexRoute component={Home}/>
+        <Route path="/selectors" component={SelectorPage} />
         <Route path="/about" component={About}/>
     </Route>
 </Router>;
 
-const store = ApplicationConfig.configReduxDev({ pages: {} });
+const store = ApplicationConfig.configReduxDev({ 
+        pages: {
+        },
+        products: {
+            p1: {
+                id: "p1",
+                name: "product1",
+                description: "Product 1 descr"
+            }
+        }
+    });
 const root = <Provider store={store}>
     <div>
         {routes}

@@ -3,5 +3,6 @@ interface IDictionary <T> {
     [index:string]: T;
 }
 interface IAppState {
-    pages: IDictionary<any>;   
+    pages: IDictionary<any>;
+    products: IDictionary<any>;   
 }

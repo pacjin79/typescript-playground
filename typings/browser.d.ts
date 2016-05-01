@@ -9,6 +9,7 @@
 /// <reference path="browser/ambient/redux-logger/index.d.ts" />
 /// <reference path="browser/ambient/redux-thunk/index.d.ts" />
 /// <reference path="browser/ambient/redux/index.d.ts" />
+/// <reference path="browser/ambient/reselect/index.d.ts" />
 /// <reference path="browser/ambient/webpack-env/index.d.ts" />
 /// <reference path="browser/definitions/lodash/index.d.ts" />
 /// <reference path="browser/definitions/react-router/index.d.ts" />

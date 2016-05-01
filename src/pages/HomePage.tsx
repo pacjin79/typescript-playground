@@ -85,7 +85,8 @@ class HomePage extends React.Component<{}, {
                         </div>
                     </Panel>
                 </Col>
-                <Link to="/about">About</Link>
+                <Link to="/about">About</Link> |
+                <Link to="/selectors">Selectors</Link>
             </div>
         );
     }
