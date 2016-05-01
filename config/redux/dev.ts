@@ -11,6 +11,7 @@ import DevTools from './DevTools';
 
 export namespace ReduxConfigDev {
     export function configureStore(initialState:IAppState) {
+        debugger
         const store = createStore(
             reducers, 
             initialState,

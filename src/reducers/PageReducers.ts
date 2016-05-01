@@ -12,3 +12,9 @@ export const pages = handleActions({
         return state;
     }
 },{});
+
+export const products = handleActions({
+    [PAGE_ACTIONS.TOGGLE_SIDE_NAV]: (state:any, action: Action) => {
+        return state;
+    }
+},{});
