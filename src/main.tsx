@@ -28,7 +28,6 @@ const store = ApplicationConfig.configReduxDev({
         }
     }
 });
-debugger;
 const history = syncHistoryWithStore(hashHistory, store);
 const routes = <Router history={history}>
     <Route path="/" component={Application}>
